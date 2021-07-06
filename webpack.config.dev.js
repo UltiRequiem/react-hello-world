@@ -1,9 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 /** @param {string} dir */
 const fm = (dir) => path.join(__dirname, dir);
@@ -11,18 +8,18 @@ const fm = (dir) => path.join(__dirname, dir);
 /** @type {import('webpack').Configuration} */
 module.exports = {
   entry: './src/index.js',
-  mode:'production',
   output: {
     path: fm('dist'),
     filename: 'main.js',
-    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-    alias: {
-      '@components': fm('src/components/'),
-      '@styles': fm('src/styles/'),
-    },
+  },
+  mode:'development',
+  devServer: {
+    contentBase: fm('dist'),
+    compress: true,
+    port: 8080,
   },
   module: {
     rules: [
@@ -51,10 +48,5 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new CleanWebpackPlugin(),
   ],
-  optimization: {
-    minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
 };
