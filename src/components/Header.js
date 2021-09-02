@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import '@styles/Header.scss'
+
 const Header = ({ text }) => (
-  <header>
-    <h1>{text}</h1>
+  <header className="header">
+    <h1 className="header__title">{text}</h1>
   </header>
 )
 
