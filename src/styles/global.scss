@@ -2,7 +2,6 @@ $base-color: #c6538c;
 
 body {
   background-color: $base-color;
-  overflow: hidden;
 }
 
 .text {
@@ -11,4 +10,8 @@ body {
   background-color: pink;
   padding: 20%;
   border: 1px solid #999;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
