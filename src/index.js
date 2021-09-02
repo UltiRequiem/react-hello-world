@@ -1,5 +1,9 @@
-import ReactDOM from 'react-dom';
-import App from '@components/App';
-import '@styles/global.scss';
+import React from 'react'
 
-ReactDOM.render(<App />, document.getElementById('app'));
+import ReactDOM from 'react-dom'
+
+import { Main } from '@pages/'
+
+import '@styles/global.scss'
+
+ReactDOM.render(<Main />, document.getElementById('app'))
