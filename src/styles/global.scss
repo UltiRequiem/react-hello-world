@@ -3,3 +3,11 @@ $base-color: #c6538c;
 body {
   background-color: $base-color;
 }
+
+.text {
+  text-align: center;
+  color: red;
+  background-color: pink;
+  padding: 20%;
+  border: 1px solid #999;
+}
