@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start:dev": "npx webpack serve --config webpack.config.dev.js",
-    "start:prod": "npx webpack serve",
-    "build": "npx webpack"
+    "start:dev": "webpack serve --config webpack.config.dev.js",
+    "start:prod": "webpack serve",
+    "build": "webpack"
   },
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com> (https://github.com/UltiRequiem)",
   "license": "MIT",
@@ -38,9 +38,9 @@
     "sass": "^1.41.1",
     "sass-loader": "^12.2.0",
     "style-loader": "^3.2.1",
-    "terser-webpack-plugin": "^5.2.2",
     "terser-webpack-plugin": "^5.2.4",
     "webpack-cli": "^4.9.0",
+    "webpack": "^5.58.2",
     "webpack-dev-server": "^4.3.1"
   }
 }
