@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
-    "start:dev": "webpack serve --config webpack.config.dev.js",
-    "start:prod": "webpack serve",
+    "dev": "webpack serve --config webpack.config.dev.js",
+    "start": "webpack serve",
     "build": "webpack"
   },
   "author": "Eliaz Bobadilla <eliaz.bobadilladev@gmail.com> (https://github.com/UltiRequiem)",
