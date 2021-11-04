@@ -37,7 +37,7 @@
     "prettier-plugin-jsdoc": "^0.3.23",
     "sass": "^1.41.1",
     "sass-loader": "^12.2.0",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.2.4",
     "webpack-cli": "^4.9.0",
     "webpack": "^5.60.0",
